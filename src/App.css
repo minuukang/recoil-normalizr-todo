@@ -1,5 +1,20 @@
+html, body, #root {
+  height: 100%;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  height: 100%;
+}
+
+.App > * {
+  flex: 1;
+  height: 100%;
+  padding: 20px;
+}
+
+.App > * ~ * {
+  border-left: 1px solid #000;
 }
 
 .App-logo {
